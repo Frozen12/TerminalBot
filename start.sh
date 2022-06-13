@@ -1,5 +1,8 @@
 #!/bin/bash
 
+python3 upstream.py
+
+
 # Create rclone.conf file from base64
 if [[ -n $RCLONE_CONFIG_BASE64 ]]; then
 	echo "Rclone config detected"
