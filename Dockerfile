@@ -1,5 +1,5 @@
 #  creates a layer from the base Docker image.
-FROM python:3.8.5-slim-buster
+FROM python:3.10.5-slim-buster
 
 WORKDIR /app
 
@@ -10,7 +10,7 @@ ENV DEBIAN_FRONTEND noninteractive
 ENV LANG C.UTF-8
 # https://shouldiblamecaching.com/
 ENV PIP_NO_CACHE_DIR 1
-ENV TZ Asia/Kolkata
+ENV TZ Asia/Dhaka
 
 # fix "ephimeral" / "AWS" file-systems
 RUN sed -i.bak 's/us-west-2\.ec2\.//' /etc/apt/sources.list
