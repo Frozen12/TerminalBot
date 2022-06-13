@@ -60,4 +60,5 @@ RUN git clone https://github.com/Frozen12/TerminalBot.git -b ${BRANCH_NAME} .
 RUN pip3 install --no-cache-dir -r requirements.txt
 
 # specifies what command to run within the container.
+COPY start.sh .
 CMD ["bash", "start.sh"]
