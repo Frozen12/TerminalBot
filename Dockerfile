@@ -54,7 +54,7 @@ RUN apt -qq install -y --no-install-recommends \
 # copies 'requirements', to inside the container
 # ..., there are multiple '' dependancies,
 # requiring the use of the entire repo, hence
-RUN git clone https://github.com/SpEcHiDe/TerminalBot.git -b ${BRANCH_NAME} .
+RUN git clone https://github.com/Frozen12/TerminalBot.git -b ${BRANCH_NAME} .
 
 # install requirements, inside the container
 RUN pip3 install --no-cache-dir -r requirements.txt
