@@ -59,10 +59,10 @@ class MessageEditor():
             text += "\n\n" + "<b>STDOUT</b>:" + "\n"
             text += "<code>" + self.stdout[max(len(self.stdout) - 2048, 0):] + "</code>"
         if len(self.stderr) > 0:
-            text += "\n\n" + "<b>STDERR</n>:" + "\n"
+            text += "\n\n" + "<b>STDERR</b>:" + "\n"
             text += "<code>" + self.stderr[max(len(self.stderr) - 1024, 0):] + "</code>"
         if len(self.stdin) > 0:
-            text += "\n\n" + "<b>STDiN</n>:" + "\n"
+            text += "\n\n" + "<b>STDiN</b>:" + "\n"
             text += "<code>" + self.stdin[max(len(self.stdin) - 1024, 0):] + "</code>"
         try:
             await self.message.edit(text, parse_mode="html")
